@@ -29,7 +29,7 @@ name(node::AbstractNode) = node.name
 
 Renvoie les données contenues dans le noeud.
 """
-data(node::AbstractNode) = 1
+data(node::AbstractNode) = node.data
 
 """
 		show(node::AbstractNode)
