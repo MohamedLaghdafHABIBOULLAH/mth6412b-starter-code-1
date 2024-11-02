@@ -30,7 +30,7 @@ end
 		Graph(name::String, nodes::Vector{Node{T}}, edges::Vector{Edge{U}})
 	
 	Construit un graphe à partir d'une liste de noeud et d'arêtes.
-	"""
+"""
 function Graph(name::String, nodes::Vector{Node{T}}, edges::Vector{Edge{U}}) where {T,U}
   return Graph(name, Dict(node.name => node for node in nodes), Dict(edge.name => edge for edge in edges), adjacency(edges))
 end
