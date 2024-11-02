@@ -22,7 +22,7 @@ end
 # posséderont des champs `name` et `data`.
 
 # L'absence de documentation de cette méthode est volontaire.
-name(node::AbstractNode) = 1
+name(node::AbstractNode) = node.name
 
 """
 	data(node::AbstractNode)
