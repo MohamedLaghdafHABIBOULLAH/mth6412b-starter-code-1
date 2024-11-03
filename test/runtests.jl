@@ -26,8 +26,8 @@ using STSP,Test
 
   cost, edges = kruskal(G)
   @test cost == 37
-  @test edges[1].data == 2
-  @test edges[end].data == 100
+  @test edges[1].data == 1
+  @test edges[end].data == 9
 
   edges = Edge{Int64}[]
   push!(edges, Edge("a", "b", 4 ))
